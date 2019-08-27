@@ -5,8 +5,8 @@ function Contact(firstname,phone) {
 };// creat an arry to store the contacts
   var contacts =[];// get the input from yhe and save it to contacts array
   var saveContact = () => {
-    var firstname = document.quertSelector('[name="firstname"]').Value
-    var phone = document.quertSelector('[name="phone]"').value;
+    var firstname = document.querySelector('[name="firstname"]').Value
+    var phone = document.quertSelector('[name="phone"]').value;
     //create a contact object using the constructor
     var newcontact = newcontact(firstname,phone);;
     // save the contact
@@ -31,11 +31,11 @@ function Contact(firstname,phone) {
       // if the name includes what the user is searching for,
       if ( firstname.includes(search_phrase)) {
         // print the name
-        console.log(firstname, " found!")
+        console.log(firstname, "found!")
         //return the constact info to the page
         var ptag = document.createElement("p");
         var node = dpcument.createTextNode(firstname + ": "+ phone);
-        ptage.appendChild(node);
+        ptag.appendChild(node);
         var elemet = document.getElementById("result");
         elemet.appendChild(ptag);
       } else {
